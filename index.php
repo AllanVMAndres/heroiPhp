@@ -11,37 +11,20 @@
 
 <body>
     <form method='post'>
-        <table>
-            <tr>
-                <td>Universo:</td>
-                <td>
-                    <input type="text" name="universo" size="50" placeholder="Marvel ou Dc">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" id='txt'>Marvel</td>
-            </tr>
-            <tr>
-                <td>Heroi:</td>
-                <td>
-                    <input type="text" name="heroi-m" size="50" placeholder="Ciclope, Estigma, Hulk, Thor ou Vampira">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" id='txt'>DC</td>
-            </tr>
-            <tr>
-                <td>Heroi:</td>
-                <td>
-                    <input type="text" name="heroi-d" size="50" placeholder="Aquaman, Batman, Ciborgue, Flash ou Superman">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="submit" value="Escolher">
-                </td>
-            </tr>
-        </table>
+                <label>Universo:</label>
+                <input type="text" name="universo" size="50" placeholder="Marvel ou Dc" id="inp">
+                <br><br>
+                <b><label>Marvel</label></b>
+                <br>
+                <label>Heroi:</label>
+                <input type="text" name="heroi-m" size="50" placeholder="Ciclope, Estigma, Hulk, Thor ou Vampira" id="inp">
+                <br><br>
+                <b><label>DC</label></b>
+                <br>
+                <label>Heroi:</td>
+                <input type="text" name="heroi-d" size="50" placeholder="Aquaman, Batman, Ciborgue, Flash ou Superman" id="inp">
+                <br><br>
+                <input type="submit" value="Escolher">
     </form>
     <?php
     $uni = $_POST['universo'];
